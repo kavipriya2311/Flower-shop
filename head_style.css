@@ -1,0 +1,169 @@
+header{
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+
+}
+body{
+    background-color: brown;
+}
+
+.logo{
+    font-size: 33px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.trans{
+   color: rgb(9, 0, 139);
+}
+.land{
+   color: dodgerblue;
+}
+nav{
+    display: flex;
+    gap: 25px;
+}
+nav a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+nav a:hover{
+    color: cornflowerblue;
+}
+.quote-btn{
+    background-color: darkslategrey;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 12px 22px;
+}
+.banner{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(flower-banner.jpg) center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0 60px;
+    color:#fff;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.banner::before{/*background moves*/
+    content:"";
+    position: absolute;
+    inset: 0;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(flower-banner.jpg) center/cover no-repeat;
+    animation: zoom 12s ease-in-out infinite alternate;
+    z-index: 0;
+}
+    .banner>*{
+        position: relative;
+        z-index: 1;
+    }
+    @keyframes zoom{
+        from{transform: scale(1);}
+        to{transform: scale(1.15);}
+    }
+.banner_content h4{
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+
+
+}
+.banner_content h1{
+    font-size: 56px;
+    margin: 0 0 12px;
+    text-align: center;
+}
+.banner_content p{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.buy_btn{
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: darkgray;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.buy_btn :hover{
+    background-color: blueviolet;
+}
+.banner > *{
+    animation: fadeUp 1s ease both;
+}
+@keyframes fadeUp{
+    from{opacity: 0; transform: translateX(30px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+
+.card_section{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+.card{
+    flex: 1;
+    min-height: 300;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card_icon{
+    font-size: 70px;
+}
+.card_card1{
+background-image: url(rose.jpg);
+}
+.card_card2{
+    background-image: url(tulip.jpg);
+}
+.card_card3{
+    background-image: url(lavender.jpg);
+}
+.card_card1{
+    background-image: url(orchid.jpg);
+}
+
+
+
+/*@keyframes iconspin {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.card p{
+    font-size: larger;
+}
+@keyframes iconFloat{
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(-10px)}
+}
+@keyframes iconShake{
+    0%, 100% { transform: rotate(0deg);}
+    25% { transform: rotate(-10deg);}
+    75% {transform: rotate(10deg);}
+}*/
+

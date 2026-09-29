@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Fiore Floral Studio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      margin-top: 60px;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .form-group label {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--color-text-light);
+    }
+    .form-input, .form-textarea {
+      padding: 14px 16px;
+      border: 1px solid var(--color-border);
+      background-color: var(--color-white);
+      border-radius: 4px;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--color-text);
+      outline: none;
+      transition: var(--transition-smooth);
+    }
+    .form-input:focus, .form-textarea:focus {
+      border-color: var(--color-text);
+    }
+    .contact-info-card {
+      background: var(--color-bg-alt);
+      padding: 45px;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .info-item h4 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+    .info-item p {
+      color: var(--color-text-light);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header dark-nav" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Fiore</a>
+      
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link">HOME</a></li>
+          <li><a href="#" class="nav-link">FLOWERS</a></li>
+          <li><a href="#" class="nav-link">PLANTS</a></li>
+          <li><a href="#" class="nav-link">SERVICES</a></li>
+          <li><a href="#" class="nav-link">FLORAL CLASSES</a></li>
+          <li><a href="#" class="nav-link">OUR STORY</a></li>
+          <li><a href="#" class="nav-link">BLOG</a></li>
+          <li><a href="#" class="nav-link active">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="action-btn" id="cartBtn" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <img src="images/hero_banner.png" class="page-hero-bg" alt="Contact Hero">
+    <div>
+      <h1 class="page-hero-title">Get in Touch</h1>
+      <p class="page-hero-subtitle">VISIT OUR ATELIER OR SEND A NOTE</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="seasons-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <h2 class="section-title" style="text-align: left; font-size: 2.4rem;">Send an Inquiry</h2>
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out to Fiore! We will reply within 24 hours.');">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. Eleanor Vance" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" class="form-input" placeholder="e.g. eleanor@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" class="form-input">
+                <option>Custom Flower Order</option>
+                <option>Wedding & Event Styling</option>
+                <option>Workshop Inquiry</option>
+                <option>General Question</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-textarea" rows="5" placeholder="Tell us about your event date or bouquet preferences..." required></textarea>
+            </div>
+            <button type="submit" class="btn-dark" style="align-self: flex-start; margin-top: 10px;">SEND MESSAGE</button>
+          </form>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="info-item">
+            <h4>Atelier Location</h4>
+            <p>142 Botanical Garden Avenue, Suite 4<br>Design District, CA 90210</p>
+          </div>
+          <div class="info-item">
+            <h4>Studio Hours</h4>
+            <p>Monday – Friday: 8:00 AM – 6:00 PM<br>Saturday & Sunday: 9:00 AM – 4:00 PM</p>
+          </div>
+          <div class="info-item">
+            <h4>Direct Contact</h4>
+            <p>Email: hello@fiore-studio.com<br>Phone: +1 (555) 438-3467</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fiore Floral Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

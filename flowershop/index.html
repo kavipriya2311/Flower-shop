@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiore — Luxury Floral Studio & Botanical Design</title>
+  <meta name="description"
+    content="Fiore offers artisanal flower arrangements, botanical subscriptions, and bespoke floral styling. We tell stories with flowers.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Floret</a>
+
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link active">HOME</a></li>
+          <li><a href="#seasons" class="nav-link">FLOWERS</a></li>
+          <li><a href="#seasons" class="nav-link">PLANTS</a></li>
+          <li><a href="#" class="nav-link">SERVICES</a></li>
+          <li><a href="#" class="nav-link">FLORAL CLASSES</a></li>
+          <li><a href="#" class="nav-link">OUR STORY</a></li>
+          <li><a href="#" class="nav-link">BLOG</a></li>
+          <li><a href="#" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="action-btn" id="cartBtn" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="action-btn mobile-toggle" id="mobileToggle" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="images/hero_banner.png" alt="Fiore Floral Artist Crafting Arrangement">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">We tell stories with flowers</h1>
+      <a href="#seasons" class="btn-pill">SHOP NOW</a>
+    </div>
+  </section>
+
+  <!-- ================= SEASONS FINEST SECTION ================= -->
+  <section class="seasons-section" id="seasons">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Seasons Finest</h2>
+        <div class="tabs-wrapper">
+          <button class="tab-btn active" data-tab="flowers">FLOWERS</button>
+          <button class="tab-btn" data-tab="plants">PLANTS</button>
+        </div>
+      </div>
+
+      <div class="carousel-wrapper">
+        <!-- Circular Left Arrow Button -->
+        <button class="carousel-btn prev" id="prevBtn" aria-label="Previous Products">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <div class="carousel-track-container">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Rendered dynamically by main.js -->
+          </div>
+        </div>
+
+        <!-- Circular Right Arrow Button -->
+        <button class="carousel-btn next" id="nextBtn" aria-label="Next Products">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BOTANICAL ARTISTRY & CRAFT ================= -->
+  <section class="craft-section">
+    <div class="container">
+      <div class="craft-grid">
+        <div class="craft-img-box">
+          <img src="images/tl-banner.jpg" alt="Botanical Artistry Workshop">
+        </div>
+        <div class="craft-content">
+          <span class="sub-title">OUR PHILOSOPHY</span>
+          <h2 class="craft-title">Handcrafted with intention, poetry & care</h2>
+          <p class="craft-desc">
+            At Fiore, every stem is thoughtfully curated from local organic growers and seasonal harvests. We believe
+            floral design is a form of living poetry—bringing quiet beauty, texture, and emotional resonance to your
+            daily rituals and celebrations.
+          </p>
+          <a href="#" class="btn-dark">DISCOVER OUR STORY</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES HIGHLIGHT GRID ================= -->
+  <section class="services-preview">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">WHAT WE OFFER</span>
+        <h2 class="section-title">Bespoke Floral Services</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-gem"></i></div>
+          <h3 class="service-title">Weddings & Events</h3>
+          <p class="service-desc">Tailored floral installations, bridal bouquets, and tablescapes for unforgettable
+            intimate gatherings and grand celebrations.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+          <h3 class="service-title">Floral Subscriptions</h3>
+          <p class="service-desc">Fresh, seasonal blooms delivered weekly or monthly to your home, studio, or corporate
+            space with glass vase recycling.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3 class="service-title">Floral Classes</h3>
+          <p class="service-desc">Immersive hands-on workshops guided by senior florists teaching color harmony, flower
+            care, and structural arrangement techniques.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INSTAGRAM GALLERY ================= -->
+  <section class="insta-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">@FIORE.STUDIO</span>
+        <h2 class="section-title">Follow Our Floral Journey</h2>
+      </div>
+
+      <div class="insta-grid">
+        <div class="insta-item">
+          <img src="images/rose.jpg" alt="Fiore Instagram 1">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="images/flower_in_bloom.png" alt="Fiore Instagram 2">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="images/tulip.jpg" alt="Fiore Instagram 3">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="images/flower_burnished_blossom.png" alt="Fiore Instagram 4">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="images/lavender.jpg" alt="Fiore Instagram 5">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">Fiore</a>
+          <p>Curating fine seasonal florals, botanical styling, and floral workshops. Based in the heart of the city.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">EXPLORE</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">STUDIO</h4>
+          <ul class="footer-links">
+            <li><a href="#">Visit Atelier</a></li>
+            <li><a href="#">Workshops</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">JOIN OUR JOURNAL</h4>
+          <p style="color: rgba(255,255,255,0.65); font-size: 0.88rem;">Subscribe to receive botanical inspiration &
+            class announcements.</p>
+          <form class="newsletter-form"
+            onsubmit="event.preventDefault(); alert('Thank you for subscribing to Fiore Journal.');">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="newsletter-btn">JOIN</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fiore Floral Studio. All rights reserved. Crafted with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SHOPPING CART SIDE DRAWER ================= -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3 class="cart-title">Your Basket</h3>
+        <button class="close-cart-btn" id="closeCartBtn">&times;</button>
+      </div>
+      <div class="cart-body" id="cartItems">
+        <!-- Rendered by JS -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <span id="cartTotal">$0.00</span>
+        </div>
+        <button class="btn-dark btn-checkout" onclick="alert('Proceeding to Checkout...')">PROCEED TO CHECKOUT</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
